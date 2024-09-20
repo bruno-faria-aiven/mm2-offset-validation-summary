@@ -1,0 +1,21 @@
+# pyproject.toml
+
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mm2_offset_validation_summary"
+version = "0.1.0"
+description = "A sample Python application with pyproject.toml packaging"
+#readme = "README.md"
+requires-python = ">=3.7"
+dependencies = [
+    "pandas",
+]
+
+[project.scripts]
+run_my_app = "mm2_offset_validation_summary.offset_validation_summary:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
