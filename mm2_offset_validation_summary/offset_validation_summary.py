@@ -1,8 +1,14 @@
 import pandas as pd
+import argparse
 
 def main():
+    # Set up argument parsing
+    parser = argparse.ArgumentParser(description="MM2 offset validation summary.")
+    parser.add_argument('csv_file', type=str, help="Path to the CSV file containing MM2 offset data")
+    args = parser.parse_args()
+
     # Load the CSV file
-    df = pd.read_csv('offset-test2.csv')
+    df = pd.read_csv(args.csv_file)
 
     pd.set_option('display.max_columns', None)
     pd.set_option('display.max_rows', None)
