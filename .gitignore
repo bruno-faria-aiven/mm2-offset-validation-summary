@@ -1,0 +1,8 @@
+build/
+dist/
+mm2_offset_validation_summary.egg-info/
+
+*.csv
+
+backupRequirements
+

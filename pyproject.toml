@@ -15,7 +15,7 @@ dependencies = [
 ]
 
 [project.scripts]
-run_my_app = "mm2_offset_validation_summary.offset_validation_summary:main"
+run_offset_validation_summary = "mm2_offset_validation_summary.offset_validation_summary:main"
 
 [tool.setuptools.packages.find]
 where = ["."]
